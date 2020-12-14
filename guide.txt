@@ -1,0 +1,12 @@
+https://sapper.svelte.dev/docs
+# to instal degit globally
+npm install -g degit
+#to create start up project 
+npx degit "sveltejs/sapper-template#rollup" my-app
+
+https://github.com/tulbadex/sapper-job-ninja.git
+
+# install lorem-ipsum
+
+# install body-parser to parse form data 
+npm install body-parser
