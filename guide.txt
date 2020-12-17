@@ -10,3 +10,6 @@ https://github.com/tulbadex/sapper-job-ninja.git
 
 # install body-parser to parse form data 
 npm install body-parser
+
+# for id column
+npm install uuid
