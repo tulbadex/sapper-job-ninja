@@ -7,6 +7,11 @@ export function get(req, res, next) {
     
     const job = jobs.find(j => j.id === id);
 
-    res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify(job));
+    if (job) {
+        res.setHeader('Content-Type', 'application/json');
+        res.end(JSON.stringify(job));
+    } else {
+        res.statusCode = 404;
+        res.end(JSON.stringify({ error: "That job dose not exist" }));
+    }
 }
